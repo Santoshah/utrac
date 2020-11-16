@@ -1,0 +1,27 @@
+<app-orders-path-link></app-orders-path-link>
+<div class="tab-content">
+
+
+    
+        
+        <div class="order_list" *ngFor="let item of activeOrders">
+            Order No. {{item.order_number}} <br>
+            Customer Name: {{item.customer_name}}<br>
+            Customer Phone: {{item.customer_phone}}<br> 
+            shop_area : {{item.shop_area}}<br>
+            shop address : {{item.shop_full_address}}
+          </div>
+
+    
+
+    
+        <div class="no_orders" *ngIf="activeOrders.length == 0 ">
+            <img src="/assets/images/no-orders.png" alt="">
+            <h2 class="text-gray">No Active Orders</h2>
+        </div>
+    
+
+ 
+
+      
+</div>

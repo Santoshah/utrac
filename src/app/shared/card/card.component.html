@@ -1,0 +1,24 @@
+<div class="card">
+    <div class="card-header df_sb">
+        <div class="header_left">Order No. <br>
+            <div class="red_bold">{{cardData.order_number}}</div>
+        </div>     
+        <div class="header_right">
+            <div class="item_data">Items: <strong>{{cardData.items.length}} items</strong></div>
+            <div class="item_data">Price: <strong>{{cardData.price}} JD</strong></div>
+        </div>
+    </div>
+    <div class="card-body customer_info df_sb">
+        <div class="custom_info_left">
+            <div class="customer_info_title">Customer Info.</div>
+            <div class="red_bold">Ahmed Zaher<br></div>
+        </div>
+        <div class="customer_info_right">
+            <div class="time_circle">1 hour</div>
+        </div>
+    </div>
+    <div class="card-footer">
+        <i class="fa fa-map-marker"></i> Drop Off: <strong>{{cardData.shop_full_address}}</strong>
+    </div>
+    
+  </div>

@@ -1,0 +1,9 @@
+      {
+          "/menu": {
+            "target": "https://web.utracadmin.net",
+            "logLevel": "debug",
+            "secure": false,
+            "changeOrigin": "true"
+          }
+ 
+      }

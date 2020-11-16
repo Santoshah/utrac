@@ -1,0 +1,18 @@
+.menu_wrap {
+    a {
+        &.active { position: relative;
+            &:after,&:before {
+                content: url(/assets/images/top-menu-graphic.jpg);
+                position: absolute;
+                top: -26px;
+                right: 0;
+                z-index: 1;
+            }
+            &:after {
+                content: url(/assets/images/bottom-menu-graphic.jpg);
+                top: auto;
+                bottom: -23px;
+            }           
+        }
+    }
+}

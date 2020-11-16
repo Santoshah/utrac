@@ -1,0 +1,15 @@
+  <app-orders-path-link></app-orders-path-link>
+  <div class="tab-content">
+        <div class="no_orders" *ngIf="orders.length == 0 ">
+            <img src="/assets/images/no-orders.png" alt="">
+            <h2 class="text-gray">No New Orders</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6"  *ngFor="let item of orders">
+              <app-card [card]="item"></app-card>
+          </div>
+        </div>
+
+        
+  </div>
